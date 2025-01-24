@@ -2,81 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- Ensures the page is optimized for mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>My Basic Webpage</title>
-  
-  <!-- Inline CSS for quick styling -->
-  <style>
-    /* Basic Reset and Box Sizing */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tyler Korth Math Tutoring</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f0f0f0;
-      color: #333;
-      padding: 20px;
-    }
-
-    header, footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      margin-bottom: 20px;
-      text-align: center;
-      border-radius: 5px;
-    }
-
-    main {
-      background-color: #fff;
-      border-radius: 5px;
-      padding: 20px;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Header section -->
+  <!-- header -->
   <header>
-    <h1>Welcome to My Basic Webpage</h1>
+    <h1>Welcome to Tyler Korth Math Tutoring</h1>
+    <p>Personalized In-Person Math Support for Elementary, Middle, &amp; High School Students</p>
   </header>
 
-  <!-- Main content area -->
+  <!-- content -->
   <main>
-    <h2>About This Page</h2>
-    <p>This is a very simple HTML page. You can replace this text with your own content.</p>
-    
-    <h2>Features</h2>
-    <ul>
-      <li>Simple layout</li>
-      <li>Clean design</li>
-      <li>Easy to customize</li>
-    </ul>
+    <!-- first row -->
+    <div class="flex-container">
+      <!-- about me -->
+      <div id="background" class="info-box">
+        <h2>About Me</h2>
+        <p>
+          Hello! I’m <strong>Tyler Korth</strong>, a student at the University of South Carolina thats a Computer Science major and Business minor 
+          with a passion for logical thinking, problem-solving, and helping students excel. 
+          My tutoring approach is hands-on, encouraging, and customized to each student’s pace.
+        </p>
+        <p>
+          I believe a strong math foundation boosts confidence both in academics 
+          and real-world problem-solving. I look forward to working with you or your child 
+          to achieve math success!
+        </p>
+      </div>
+
+      <!-- qualifications -->
+      <div id="qualifications" class="info-box">
+        <h2>My Qualifications</h2>
+        <p>
+          Through my degree in Computer Science (and Business minor), I've developed a strong 
+          background in various mathematical fields, including:
+        </p>
+        <ul>
+          <li>Elementary Math</li>
+          <li>Pre-Algebra &amp; Algebra</li>
+          <li>Geometry &amp; Trigonometry</li>
+          <li>Pre-Calculus &amp; Calculus</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- second row -->
+    <div class="flex-container">
+      <!-- experience box learning -->
+      <div id="learning-experience" class="info-box">
+        <h2>Customized Learning</h2>
+        <p>
+          Every student’s math journey is unique. I create a personalized plan based on 
+          each student’s goals, learning style, and pace. Together, we will:
+        </p>
+        <ul>
+          <li>Reinforce core concepts through hands-on practice</li>
+          <li>Build confidence with step-by-step problem-solving</li>
+          <li>Develop test-taking strategies and time management</li>
+          <li>Apply math to real-world scenarios to keep learning fun</li>
+        </ul>
+      </div>
+
+      <!-- session overview -->
+      <div id="session-overview" class="info-box">
+        <h2>What a Tutoring Session Looks Like</h2>
+        <p>
+          My sessions are always <strong>one-on-one and in-person</strong>. In each session, we:
+        </p>
+        <ul>
+          <li>Identify the specific concepts to focus on (e.g., homework, upcoming tests)</li>
+          <li>Review any foundational skills needed to understand the new material</li>
+          <li>Work through example problems and practice together</li>
+          <li>Discuss tips, shortcuts, and strategies for mastering the topic</li>
+        </ul>
+        <p>
+          Sessions typically last 60-90 minutes, but I can adjust the duration based on individual needs.
+        </p>
+      </div>
+    </div>
+
+    <!-- third row -->
+    <div class="flex-container">
+      <!-- contact -->
+      <div id="contact" class="info-box">
+        <h2>Contact Me</h2>
+        <p>
+          Ready to get started or have questions?  
+          <br/><strong>Email:</strong> <a href="mailto:tylerkorth12@gmail.com">tylerkorth12@gmail.com</a>  
+          <br/><strong>OR</strong> fill out my <a href="https://docs.google.com/forms/d/YOUR_FORM_ID/viewform" target="_blank">Contact Form</a>.
+        </p>
+        <!-- <p>
+          Note: Replace <code>YOUR_FORM_ID</code> 
+        </p> -->
+      </div>
+
+      <!-- FAQ -->
+      <div id="faq" class="info-box">
+        <h2>FAQ</h2>
+        <h3>1. Where do the sessions take place?</h3>
+        <p>
+          I currently provide in-person tutoring in Camden, Lugoff and Columbia South Carolina. We can meet at a public 
+          location (e.g., library, coffee shop) or at your residence if that’s preferred.
+        </p>
+
+        <h3>2. How long are tutoring sessions?</h3>
+        <p>
+          Sessions typically last 60-90 minutes, but can be adjusted to best fit the student’s schedule and needs.
+        </p>
+
+        <h3>3. What if my child only needs help occasionally?</h3>
+        <p>
+          That’s perfectly fine! I offer flexible scheduling for one-time sessions or periodic check-ins as needed.
+        </p>
+
+        <h3>4. What is your availability?</h3>
+        <p>
+          My schedule is generally flexible. Email me or fill out the contact form, and we’ll find a time that works!
+        </p>
+      </div>
+    </div>
   </main>
 
-  <!-- Footer section -->
+  <!-- footer -->
   <footer>
-    <p>&copy; 2025 My Basic Website</p>
+    <!-- <p>&copy; 2025 Tyler Korth</p> -->
   </footer>
 
-  <!-- Optional JavaScript -->
-  <script>
-    // You can add any JavaScript code here
-    console.log("Hello from your basic webpage!");
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
